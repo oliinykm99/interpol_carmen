@@ -28,7 +28,7 @@ For this final assessment, please build a dbt project that addresses the problem
 
 ## Data Sources & Common Model Development
 
-The data is contained in the attached Excel workbook [*carmen_sightings_20220629061307.xlsx*](). Note the sheets are organized by eight (nearly continential) **regions** - there is an Interpol agency HQ in a city of each region to which the agents report. Each agency HQ uses their own language or dialect to compile their regional reports, but those reports are in [first normal form (1NF)](https://en.wikipedia.org/wiki/First_normal_form). 
+The data is contained in the attached Excel workbook [*carmen_sightings_20220629061307.xlsx*](https://github.com/cascadedebt/skills-assessment-data-engineer/blob/f913f119c3ab2aab4630f4ab0aecfe4d1b3f54b0/carmen_sightings_20220629061307.xlsx). Note the sheets are organized by eight (nearly continential) **regions** - there is an Interpol agency HQ in a city of each region to which the agents report. Each agency HQ uses their own language or dialect to compile their regional reports, but those reports are in [first normal form (1NF)](https://en.wikipedia.org/wiki/First_normal_form). 
 
 > 1. _The first step of your task is to extract data from Excel workbook, treating as initial sources._
 > **HINT:** _CSV exports into `seeds` - whether by Excel or pandas - is a great way to start..._ :eyes:
