@@ -73,7 +73,7 @@ Now that you have eight models, all with the same columns - join them together, 
 
     d. For each month, what is the probability Ms. Sandiego exhibits one of her three most occurring behaviors?
 
-> 4. _Create analytical views in your new schema to answer the five above questions. Document your steps and logic in your README.md._
+> 4. _Create analytical views in your new schema to answer the four above questions. Document your steps and logic in your README.md._
 > **HINT:** _`dbt docs` (and its screenshots) are a great resource!_
 
 ---
@@ -84,7 +84,7 @@ Now that you have eight models, all with the same columns - join them together, 
 
 * **Ensure that your project runs fully BEFORE submission!** 
 
-* Verify that you have the five analytical questions answered in your README.md, and you are confident with your presentation. 
+* Verify that you have the f analytical questions answered in your README.md, and you are confident with your presentation. 
 
 * Push and merge into your git repository's main branch. 
 
