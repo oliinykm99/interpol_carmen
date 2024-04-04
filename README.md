@@ -34,7 +34,7 @@ The data is contained in the attached Excel workbook [*carmen_sightings_20220629
 > **HINT:** _CSV exports into `seeds` - whether by Excel or pandas - is a great way to start..._ :eyes:
 
 As seen from the data, agencies are free to name report columns according to their custom - but let's call each "yablaka" an apple! :apple: 
-Each source ought follow a _common data dictionary_ of 
+Each source ought follow a _common data dictionary_ with the following entries 
 
 | Column | Description | Type |
 | ------------ | ----------- | -----|
