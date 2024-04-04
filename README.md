@@ -88,4 +88,4 @@ Now that you have eight models, all with the same columns - join them together, 
 
 * Push and merge into your git repository's main branch. 
 
-* Submit your project's git repository URL to either the Rippling comms channel or via email to `joshua@cascadedebt.com`.
+* Submit your project's git repository URL to either the Rippling comms channel or via email to `parham@cascadedebt.com`.
