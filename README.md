@@ -1,5 +1,5 @@
 <p align="center">
-  <img src='https://ucarecdn.com/b23cdfa3-9e8d-4799-aa9b-6c9af94f2d67/' alt="Cascade Debt" width=350px/>
+  <img src='https://cdn.prod.website-files.com/66a2515470d3ed7f7117dbea/66b1f4d2f1f57daf0d7e2a39_cascade-lockup-full%20color-rgb.svg' alt="Cascade Debt" width=350px/>
   <br><br>
 </p>
 
@@ -84,8 +84,8 @@ Now that you have eight models, all with the same columns - join them together, 
 
 * **Ensure that your project runs fully BEFORE submission!** 
 
-* Verify that you have the f analytical questions answered in your README.md, and you are confident with your presentation. 
+* Verify that you have the four analytical questions answered in your README.md, and you are confident with your presentation. 
 
 * Push and merge into your git repository's main branch. 
 
-* Submit your project's git repository URL to either the Rippling comms channel or via email to `parham@cascadedebt.com`.
+* Submit your project's git repository URL via email to `parham@cascadedebt.com`.
