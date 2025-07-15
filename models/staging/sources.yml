@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: interpol_raw
+    schema: "{{ target.schema }}"
+    tables:
+      - name: region_africa
+        description: "Raw sightings from Africa region"
+        identifier: "region_africa"
+        
+      - name: region_america
+        description: "Raw sightings from America region"
+        identifier: "region_america"
+      
+      - name: region_asia
+        description: "Raw sightings from Asia region"
+        identifier: "region_asia"
+
+      - name: region_atlantic
+        description: "Raw sightings from Atlantic region"
+        identifier: "region_atlantic"
+
+      - name: region_australia
+        description: "Raw sightings from Australia region"
+        identifier: "region_australia"
+
+      - name: region_europe
+        description: "Raw sightings from Europe region"
+        identifier: "region_europe"
+
+      - name: region_indian
+        description: "Raw sightings from Indian region"
+        identifier: "region_indian"
+
+      - name: region_pacific
+        description: "Raw sightings from Pacific region"
+        identifier: "region_pacific" 
