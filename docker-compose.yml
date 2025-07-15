@@ -1,0 +1,26 @@
+services:
+  postgres:
+    image: postgres:13
+    platform: linux/amd64
+    environment:
+      POSTGRES_USER: dbt_user
+      POSTGRES_PASSWORD: dbt_password
+      POSTGRES_DB: carmen_db
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  dbt:
+    image: ghcr.io/dbt-labs/dbt-postgres:1.5.0
+    platform: linux/amd64
+    depends_on:
+      - postgres
+    environment:
+      DBT_PROFILES_DIR: /usr/app
+    volumes:
+      - .:/usr/app
+    working_dir: /usr/app
+
+volumes:
+  postgres_data:
