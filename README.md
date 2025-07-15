@@ -1,1 +1,1 @@
-![Analytics Schema Diagram](images/analytics_schema_drawio.svg)
+![Analytics Schema Diagram](images/analytics_schema.drawio.svg)
