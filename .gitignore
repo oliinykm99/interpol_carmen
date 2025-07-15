@@ -1,0 +1,21 @@
+# dbt-specific ignores
+/target/
+/logs/
+/dbt_packages/
+/dbt_modules/
+/.dbt/
+*.prof
+*.env
+*.DS_Store
+.user.yml
+
+# Python/Virtual Environment (if applicable)
+__pycache__/
+*.py[cod]
+*.venv
+venv/
+env/
+
+# IDE-specific files
+.idea/
+.vscode/
