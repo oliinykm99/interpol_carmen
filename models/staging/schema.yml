@@ -1,0 +1,330 @@
+version: 2
+
+models:
+  - name: stg_africa
+    description: "Cleaned data from Africa region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [] # no not_null test here, because nulls exist
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_america
+    description: "Cleaned data from America region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_asia
+    description: "Cleaned data from Asia region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_atlantic
+    description: "Cleaned data from Atlantic region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_australia
+    description: "Cleaned data from Australia region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_europe
+    description: "Cleaned data from Europe region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_indian
+    description: "Cleaned data from Indian region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']
+
+  - name: stg_pacific
+    description: "Cleaned data from Pacific region"
+    columns:
+      - name: date_witness
+        tests: [not_null]
+      - name: date_agent
+        tests: [not_null]
+      - name: witness
+        tests: [not_null]
+      - name: agent
+        tests: [not_null]
+      - name: latitude
+        tests: [not_null]
+      - name: longitude
+        tests: [not_null]
+      - name: city
+        tests: [not_null]
+      - name: country
+        tests: [not_null]
+      - name: region_hq
+        tests: [not_null]
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: ['true', 'false']
+      - name: behavior
+        tests: [not_null]
+      - name: region_source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['africa', 'america', 'asia', 'atlantic', 'australia', 'europe', 'indian', 'pacific']

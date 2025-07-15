@@ -1,0 +1,113 @@
+version: 2
+
+models:
+  - name: fact_observation
+    description: "Fact table of sightings and observations of Ms. Sandiego."
+    columns:
+      - name: observation_id
+        description: "Unique identifier for the observation."
+        tests:
+          - not_null
+          - unique
+      - name: date_witness
+        tests:
+          - not_null
+      - name: date_agent
+        tests:
+          - not_null
+      - name: witness_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_witness')
+              field: witness_id
+      - name: agent_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_agent')
+              field: agent_id
+      - name: location_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_location')
+              field: location_id
+      - name: region_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_region')
+              field: region_id
+      - name: has_weapon
+        tests:
+          - accepted_values:
+              values: [true, false]
+      - name: has_hat
+        tests:
+          - accepted_values:
+              values: [true, false]
+      - name: has_jacket
+        tests:
+          - accepted_values:
+              values: [true, false]
+      - name: behavior
+        tests:
+          - not_null
+
+  - name: dim_agent
+    description: "Dimension table for agents."
+    columns:
+      - name: agent_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+
+  - name: dim_witness
+    description: "Dimension table for witnesses."
+    columns:
+      - name: witness_id
+        tests:
+          - not_null
+          - unique
+      - name: name
+        tests:
+          - not_null
+
+  - name: dim_location
+    description: "Dimension table for location details."
+    columns:
+      - name: location_id
+        tests:
+          - not_null
+          - unique
+      - name: latitude
+        tests:
+          - not_null
+      - name: longitude
+        tests:
+          - not_null
+      - name: city
+        tests:
+          - not_null
+      - name: country
+        tests:
+          - not_null
+      - name: region_hq
+        tests:
+          - not_null
+
+  - name: dim_region
+    description: "Dimension table for region source."
+    columns:
+      - name: region_id
+        tests:
+          - not_null
+          - unique
+      - name: region_source
+        tests:
+          - not_null
+          - unique
