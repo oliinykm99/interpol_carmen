@@ -178,7 +178,7 @@ This model identifies the most frequently observed behaviors of Ms. Sandiego acr
 3. **Order and limit:**  
    Sort behaviors by descending occurrence count and limit to the top three.
 
-**Top 3 behaviors:**
+**Observations:**
 
 <div align="center">
 
