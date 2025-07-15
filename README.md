@@ -114,6 +114,10 @@ When aggregating across all months, we observe that Carmen Sandiego is most ofte
 
 These findings suggest that Europe may be her primary base of operations.
 
+<p align="center">
+  <img src="images/graph_visualiser-1752606772313.png" alt="Probability Bar Chart">
+</p>
+
 ---
 
 ### b. For each month, what is the probability that Ms. Sandiego is armed AND wearing a jacket, but NOT a hat?
