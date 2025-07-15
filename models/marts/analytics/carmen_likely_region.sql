@@ -5,7 +5,7 @@
 
 WITH region_counts AS (
     SELECT
-        date_trunc('month', date_witness) AS month,
+        TO_CHAR(date_trunc('month', date_witness), 'YYYY-MM') AS month,
         region_id,
         COUNT(*) AS observations
     FROM {{ ref('fact_observation') }}

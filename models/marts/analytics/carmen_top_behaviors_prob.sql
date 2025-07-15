@@ -11,7 +11,7 @@ WITH top_behaviors AS (
 
 monthly_behavior_counts AS (
     SELECT
-        date_trunc('month', date_witness) AS month,
+        TO_CHAR(date_trunc('month', date_witness), 'YYYY-MM') AS month,
         COUNT(*) AS total_observations,
         SUM(
             CASE 
