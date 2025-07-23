@@ -194,7 +194,7 @@ This model identifies the most frequently observed behaviors of Ms. Sandiego acr
 
 </div>
 
-### d. 📅 For each month, what is the probability Ms. Sandiego exhibits one of her three most occurring behaviors?
+### d. For each month, what is the probability Ms. Sandiego exhibits one of her three most occurring behaviors?
 
 **Model:** `carmen_top_behaviors_prob`
 
